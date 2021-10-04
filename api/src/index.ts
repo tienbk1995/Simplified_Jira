@@ -43,6 +43,7 @@ const initializeExpress = (): void => {
 
 const initializeApp = async (): Promise<void> => {
   await establishDatabaseConnection();
+  console.log('Connection established');
   initializeExpress();
 };
 
